@@ -1,32 +1,39 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
+import Navbar from '../components/navbar'
 import { prefix } from '../components/utils/prefix';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col min-h-screen">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="${prefix}/favicon.ico" />
+        <title>Uni Dental</title>
+        <link rel="icon" href={prefix + "/favicon.ico"} />
       </Head>
+
+      <Navbar />
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
+          <Link href="/">
+            <a className="text-blue-600" >
+              Uni Dental!
+            </a>
+          </Link>
         </h1>
 
         <p className="mt-3 text-2xl">
-          Get started by editing{' '}
+          We are a family-owned dental office in Temple City, CA 😊
+          {/* Get started by editing{' '}
           <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
             pages/index.js
-          </code>
+          </code> */}
         </p>
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
+          {/* <a
             href="https://nextjs.org/docs"
             className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
@@ -64,21 +71,23 @@ export default function Home() {
             <p className="mt-4 text-xl">
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a>
+          </a> */}
         </div>
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
         <a
           className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://unidental.us/"
         >
-          Powered by{' '}
-          <img src="${prefix}/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
+          All rights reserved by Uni Dental{' '}
+          <img
+            src={prefix + '/logo.svg'}
+            alt="Unidental Logo"
+            className="h-8 ml-2"
+          />
         </a>
-      </footer>
+      </footer> 
     </div>
   )
 }
