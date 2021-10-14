@@ -24,8 +24,6 @@ import {
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
-import { prefix } from '../components/utils/prefix';
-
 const services = [
   {
     name: 'Dental Implant',
@@ -102,7 +100,7 @@ export default function Navbar() {
             <Link href="/">
               <a>
                 <img
-                  src={prefix + '/logo.svg'}
+                  src="/logo.svg"
                   alt="Unidental Logo"
                   className="h-12 ml-2"
                 />
@@ -300,7 +298,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between">
                 <div className="h-12 ml-2">
                   <img
-                    src={prefix + '/logo.svg'}
+                    src="/logo.svg"
                     alt="Unidental Logo"
                     className="h-8 ml-2"
                   />

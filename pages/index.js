@@ -2,14 +2,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import Navbar from '../components/navbar'
-import { prefix } from '../components/utils/prefix';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
         <title>Uni Dental</title>
-        <link rel="icon" href={prefix + "/favicon.ico"} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
@@ -82,7 +81,7 @@ export default function Home() {
         >
           All rights reserved by Uni Dental{' '}
           <img
-            src={prefix + '/logo.svg'}
+            src="/logo.svg"
             alt="Unidental Logo"
             className="h-8 ml-2"
           />
