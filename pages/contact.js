@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 import Navbar from '../components/navbar'
 
-export default function Home() {
+export default function Contact() {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
-        <title>Uni Dental</title>
+        <title>Uni Dental: Contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -15,8 +15,7 @@ export default function Home() {
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <p className="text-primary">Uni Dental!</p>
+          Contact Us
         </h1>
 
         <p className="mt-3 text-2xl">
@@ -28,7 +27,7 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          {/* <a
+          <a
             href="https://nextjs.org/docs"
             className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
@@ -66,7 +65,7 @@ export default function Home() {
             <p className="mt-4 text-xl">
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a> */}
+          </a>
         </div>
       </main>
 
