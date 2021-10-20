@@ -50,15 +50,18 @@ export default function Location() {
       <Navbar />
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-primary text-6xl font-bold mt-6">
+        <h1 className="text-primary text-6xl font-bold mt-6 mb-6">
           Location
         </h1>
 
-        <div className="flex flex-wrap items-center justify-around h-screen w-screen sm:w-full">
-          <p className="text-2xl w-full">
+        <div className="flex flex-wrap items-center justify-around max-w-4xl mb-6 sm:w-full">
+          <p className="text-2xl">
             We are located near the intersection of Las Tunas Drive and Encinita Ave!
           </p>
-          <div id="my-map" className="h-3/4 w-2/3" />
+        </div>
+
+        <div className="w-screen h-screen md:px-12">
+          <div id="my-map" className="w-full h-full"/>
         </div>
       </main>
 

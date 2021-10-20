@@ -25,15 +25,28 @@ export default function About() {
         <h1 className="text-4xl pt-6 font-bold">
           Our Values
         </h1>
-        <div className="flex flex-wrap items-center justify-center max-w-4xl mt-6 sm:w-full">
+
+        <div
+          className="p-6 mt-6 border rounded-xl hover:text-primary focus:text-primary"
+        >
+          <p className="text-left text-lg min-w-96">
+            <strong>Uni</strong>que because we are a family caring for families.<br/>
+            <strong>Uni</strong>versal because we provide high quality dental care for everyone, regardless of ability to pay.<br/>
+            <strong>Uni</strong>ted because we bring our team members and our clients together.<br/>
+            <br/>
+            Uni brings U-N-I (you and I) together
+          </p>
+        </div>
+
+        {/* <div className="flex flex-wrap items-center justify-center max-w-4xl mt-6 sm:w-full">
           <p className="text-left text-lg">
             <strong>Uni</strong>que because we are a family caring for families.<br/>
             <strong>Uni</strong>versal because we provide high quality dental care for everyone, regardless of ability to pay.<br/>
             <strong>Uni</strong>ted because we bring our team members and our clients together.<br/>
             <br/>
-            Uni brings U-N-I (you and I) together!
+            Uni brings U-N-I (you and I) together
           </p>
-        </div>
+        </div> */}
 
         <h1 className="text-4xl pt-6 font-bold">
           Our Team
