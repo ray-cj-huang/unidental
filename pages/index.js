@@ -13,7 +13,7 @@ export default function Home() {
 
       <Navbar />
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-5 md:px-20 text-center">
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <p className="text-primary">Uni Dental!</p>

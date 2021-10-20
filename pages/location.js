@@ -49,7 +49,7 @@ export default function Location() {
 
       <Navbar />
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-5 md:px-20 text-center">
         <h1 className="text-primary text-6xl font-bold mt-6 mb-6">
           Location
         </h1>
