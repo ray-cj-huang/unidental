@@ -24,12 +24,20 @@ export default function Contact() {
           Make an appointment today!
         </p>
 
-        <div className="p-6 mt-6 border rounded-xl">
-          <p className="text-left text-lg min-w-96">
+        <div className="flex flex-wrap items-center overflow-scroll justify-around p-6 mt-6 border rounded-xl max-w-max">
+          <pre className="text-left text-lg max-w-xs sm:max-w-max">
             Phone: <a href="tel:+16264582788" className="font-bold hover:text-primary focus:text-primary">(626)458-2788</a><br/>
-            {/* Office Hour: <br/> */}
+            <br/>
+            Office Hour: Monday     9:30 am - 6:00 pm<br/>
+        {'             '}Tuesday    9:30 am - 6:00 pm<br/>
+        {'             '}Wednesday  9:30 am - 6:00 pm<br/>
+        {'             '}Thursday   Closed<br/>
+        {'             '}Friday     9:30 am - 6:00 pm<br/>
+        {'             '}Saturday   9:30 am - 6:00 pm<br/>
+        {'             '}Sunday     Closed<br/>
+          <br/>
             Address: <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/phWDHDtJRd4e8Uos7" className="font-bold hover:text-primary focus:text-primary">5898 Encinita Ave, Temple City, CA 91780</a>
-          </p>
+          </pre>
         </div>
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">

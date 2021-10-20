@@ -5,6 +5,9 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    maxWidth: {
+      '1/1': '100%'
+     },
     extend: {
       colors: {
         'primary': '#0c4ec4',
