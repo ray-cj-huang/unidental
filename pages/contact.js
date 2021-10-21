@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Widget } from '@typeform/embed-react'
 
 import Navbar from '../components/navbar'
+import ContactInfo from '../components/contact-info'
 
 export default function Contact() {
   return (
@@ -16,7 +17,7 @@ export default function Contact() {
       <Navbar />
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-5 md:px-20 text-center">
-        <h1 className="text-6xl mt-6 font-bold">
+        <h1 className="text-6xl mt-6 font-bold text-primary">
           Contact Us
         </h1>
 
@@ -24,21 +25,11 @@ export default function Contact() {
           Make an appointment today!
         </p>
 
-        <div className="flex overflow-scroll w-full justify-around p-6 mt-6 border rounded-xl">
-          <pre className="text-left text-lg">
-            Phone: <a href="tel:+16264582788" className="font-bold hover:text-primary focus:text-primary">(626)458-2788</a><br/>
-            <br/>
-            Office Hour: Monday     9:30 am - 6:00 pm<br/>
-        {'             '}Tuesday    9:30 am - 6:00 pm<br/>
-        {'             '}Wednesday  9:30 am - 6:00 pm<br/>
-        {'             '}Thursday   Closed<br/>
-        {'             '}Friday     9:30 am - 6:00 pm<br/>
-        {'             '}Saturday   9:30 am - 6:00 pm<br/>
-        {'             '}Sunday     Closed<br/>
-          <br/>
-            Address: <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/phWDHDtJRd4e8Uos7" className="font-bold hover:text-primary focus:text-primary">5898 Encinita Ave, Temple City, CA 91780</a>
-          </pre>
-        </div>
+        <ContactInfo />
+
+        <h1 className="text-4xl pt-6 font-bold">
+          Got a question? Ask away!
+        </h1>
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full border rounded-xl">
           <Widget id="HBn2scf7" className="my-form h-screen w-screen" />

@@ -14,6 +14,10 @@ module.exports = {
         'secondary': '#67dbb4',
         'link': '#0645AD',
       },
+      backgroundColor: {
+        'primary': '#0c4ec4',
+        'secondary': '#67dbb4',
+      },
     },
   },
   variants: {

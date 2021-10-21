@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import Navbar from '../components/navbar'
+import ContactInfo from '../components/contact-info'
 
 export default function Home() {
   return (
@@ -26,6 +27,8 @@ export default function Home() {
             pages/index.js
           </code> */}
         </p>
+
+        <ContactInfo />
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
           {/* <a
