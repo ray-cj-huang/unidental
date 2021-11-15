@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 import ContactInfo from '../components/contact-info'
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
       <Navbar />
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-5 md:px-20 text-center">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-6xl mt-6 font-bold">
           Welcome to{' '}
           <p className="text-primary">Uni Dental!</p>
         </h1>
@@ -73,19 +74,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://unidental.us/"
-        >
-          All rights reserved by Uni Dental{' '}
-          <img
-            src="/logo.svg"
-            alt="Unidental Logo"
-            className="h-8 ml-2"
-          />
-        </a>
-      </footer> 
+      <Footer />
     </div>
   )
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 export default function About() {
   return (
@@ -22,19 +23,17 @@ export default function About() {
           We are a family-owned dental office in Temple City, CA 😊
         </p>
 
-        <h1 className="text-4xl pt-6 font-bold">
+        <h1 className="text-4xl mt-12 font-bold">
           Our Values
         </h1>
 
         <div
           className="p-6 mt-6 border rounded-xl hover:text-primary focus:text-primary"
         >
-          <p className="text-left text-lg min-w-96">
-            <strong>Uni</strong>que because we are a family caring for families.<br/>
-            <strong>Uni</strong>versal because we provide high quality dental care for everyone, regardless of ability to pay.<br/>
-            <strong>Uni</strong>ted because we bring our team members and our clients together.<br/>
-            <br/>
-            Uni brings U-N-I (you and I) together
+          <p className="text-left sm:text-md md:text-xl tracking-wide min-w-96">
+            <strong className="text-primary">Uni</strong>que because we are a family caring for families.<br/>
+            <strong className="text-primary">Uni</strong>versal because we provide high quality dental care for everyone, regardless of ability to pay.<br/>
+            <strong className="text-primary">Uni</strong>ted because we bring our team members and our clients together.<br/>
           </p>
         </div>
 
@@ -48,7 +47,7 @@ export default function About() {
           </p>
         </div> */}
 
-        <h1 className="text-4xl pt-6 font-bold">
+        <h1 className="text-4xl mt-12 font-bold">
           Our Team
         </h1>
 
@@ -87,7 +86,7 @@ export default function About() {
             href=""
             className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
-            <h3 className="text-2xl font-bold">Ling Wang</h3>
+            <h3 className="text-2xl font-bold">Ling</h3>
             <p className="mt-4 text-xl">
               {/* Instantly deploy your Next.js site to a public URL with Vercel. */}
             </p>
@@ -115,19 +114,7 @@ export default function About() {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://unidental.us/"
-        >
-          All rights reserved by Uni Dental{' '}
-          <img
-            src="/logo.svg"
-            alt="Unidental Logo"
-            className="h-8 ml-2"
-          />
-        </a>
-      </footer> 
+      <Footer />
     </div>
   )
 }

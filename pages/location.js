@@ -31,7 +31,7 @@ export default function Location() {
       const popup = new mapboxgl.Popup({ closeOnClick: false, closeButton: false, className: 'text-xl text-link font-bold underline' })
         .setLngLat(longLatDental)
         .setHTML(
-          '<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/phWDHDtJRd4e8Uos7">5898 Encinita Ave, Temple City, CA 91780</a>'
+          '<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/Wb1PkJqyydMpCGAP8">5898 Encinita Ave, Temple City, CA 91780</a>'
         )
         .addTo(map);
       const unidental = new mapboxgl.Marker({color: fullConfig.theme.colors.secondary})

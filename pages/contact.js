@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Widget } from '@typeform/embed-react'
 
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 import ContactInfo from '../components/contact-info'
 
 export default function Contact() {
@@ -36,19 +37,7 @@ export default function Contact() {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://unidental.us/"
-        >
-          All rights reserved by Uni Dental{' '}
-          <img
-            src="/logo.svg"
-            alt="Unidental Logo"
-            className="h-8 ml-2"
-          />
-        </a>
-      </footer> 
+      <Footer />
     </div>
   )
 }

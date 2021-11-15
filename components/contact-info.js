@@ -1,19 +1,36 @@
 export default function ContactInfo() {
   return (
-    <div className="flex overflow-x-scroll md:overflow-hidden w-full justify-around p-6 mt-6 border rounded-xl">
-      <pre className="text-left text-lg w-full">
-        Phone: <a href="tel:+16264582788" className="font-bold hover:text-primary focus:text-primary">(626)458-2788</a><br/>
+    <div>
+      <div className="flex overflow-x-scroll md:overflow-hidden w-full justify-around p-6 m-6 border rounded-xl">
+        <div className="text-left text-lg w-full">
+          Phone: <a href="tel:+16264582788" className="font-bold hover:text-primary focus:text-primary">(626)458-2788</a><br/>
+          Address: <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/phWDHDtJRd4e8Uos7" className="font-bold hover:text-primary focus:text-primary">5898 Encinita Ave, Temple City, CA 91780</a>
+          <br/><br/>
+          <strong>Office Hours</strong>
+          <div className="flex">
+            <div className="flex-1">Monday</div>     <div className="flex-auto">9:30 am - 6:00 pm</div>
+          </div>
+          <div className="flex">
+            <div className="flex-1">Tuesday</div>    <div className="flex-auto">9:30 am - 6:00 pm</div>
+          </div>
+          <div className="flex">
+            <div className="flex-1">Wednesday</div>  <div className="flex-auto">9:30 am - 6:00 pm</div>
+          </div>
+          <div className="flex">
+            <div className="flex-1">Thursday</div>   <div className="flex-auto">Closed</div>
+          </div>
+          <div className="flex">
+            <div className="flex-1">Friday</div>     <div className="flex-auto">9:30 am - 6:00 pm</div>
+          </div>
+          <div className="flex">
+            <div className="flex-1">Saturday</div>   <div className="flex-auto">9:30 am - 6:00 pm</div>
+          </div>
+          <div className="flex">
+            <div className="flex-1">Sunday</div>     <div className="flex-auto">Closed</div>
+          </div>              
         <br/>
-        Office Hour: Monday     9:30 am - 6:00 pm<br/>
-    {'             '}Tuesday    9:30 am - 6:00 pm<br/>
-    {'             '}Wednesday  9:30 am - 6:00 pm<br/>
-    {'             '}Thursday   Closed<br/>
-    {'             '}Friday     9:30 am - 6:00 pm<br/>
-    {'             '}Saturday   9:30 am - 6:00 pm<br/>
-    {'             '}Sunday     Closed<br/>
-      <br/>
-        Address: <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/phWDHDtJRd4e8Uos7" className="font-bold hover:text-primary focus:text-primary">5898 Encinita Ave, Temple City, CA 91780</a>
-      </pre>
+        </div>
+      </div>
     </div>
   )
 }
