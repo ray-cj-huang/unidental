@@ -6,7 +6,7 @@ export default function Footer() {
           className="flex items-center justify-center"
           href="https://unidental.us/"
         >
-          All rights reserved by Uni Dental, Practice of David Huang DDS Inc.{' '}
+          All rights reserved by Uni Dental, Dental Practice of David Huang DDS Inc.{' '}
           <img
             src="/logo.svg"
             alt="Unidental Logo"
