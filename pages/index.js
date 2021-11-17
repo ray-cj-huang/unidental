@@ -11,6 +11,11 @@ export default function Home() {
       <Head>
         <title>Uni Dental</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="Uni Dental"
+          content="We are a family-owned dental office in Temple City, CA 😊"
+          key="desc"
+        />
       </Head>
 
       <Navbar />

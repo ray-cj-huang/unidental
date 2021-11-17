@@ -13,6 +13,11 @@ export default function Contact() {
       <Head>
         <title>Uni Dental: Contact</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="Uni Dental: Contact"
+          content="To schedule an appointment now, call (626)458-2788!"
+          key="desc"
+        />
       </Head>
 
       <Navbar />

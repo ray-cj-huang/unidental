@@ -10,6 +10,11 @@ export default function About() {
       <Head>
         <title>Uni Dental: About</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="Uni Dental: About"
+          content="Learn more about Uni Dental, located in Temple City, CA!"
+          key="desc"
+        />
       </Head>
 
       <Navbar />

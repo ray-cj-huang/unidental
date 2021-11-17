@@ -45,6 +45,11 @@ export default function Location() {
       <Head>
         <title>Uni Dental: Location</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="Uni Dental: Location"
+          content="We are located at 5898 Encinita Ave, Temple City, CA 91780"
+          key="desc"
+        />
       </Head>
 
       <Navbar />
