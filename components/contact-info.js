@@ -1,7 +1,7 @@
 export default function ContactInfo() {
   return (
     <div>
-      <div className="flex overflow-x-scroll md:overflow-hidden w-full justify-around p-6 m-6 border rounded-xl">
+      <div className="flex overflow-hidden w-full justify-around p-6 m-6">
         <div className="text-left text-lg w-full">
           Phone: <a href="tel:+16264582788" className="font-bold hover:text-primary focus:text-primary">(626)458-2788</a><br/>
           Address: <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/phWDHDtJRd4e8Uos7" className="font-bold hover:text-primary focus:text-primary">5898 Encinita Ave, Temple City, CA 91780</a>

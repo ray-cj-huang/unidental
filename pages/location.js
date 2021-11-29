@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React, { useRef, useEffect, useState } from 'react';
 
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 import resolveConfig from 'tailwindcss/resolveConfig'
 import tailwindConfig from '../tailwind.config.js'
@@ -70,19 +71,7 @@ export default function Location() {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://unidental.us/"
-        >
-          All rights reserved by Uni Dental{' '}
-          <img
-            src="/logo.svg"
-            alt="Unidental Logo"
-            className="h-8 ml-2"
-          />
-        </a>
-      </footer> 
+      <Footer/> 
     </div>
   )
 }
