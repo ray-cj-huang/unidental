@@ -4,6 +4,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
