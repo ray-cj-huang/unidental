@@ -1,12 +1,10 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
 
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
-
-export default function About() {
+const Home: NextPage = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       <Head>
         <title>Uni Dental: About</title>
         <link rel="icon" href="/favicon.ico" />
@@ -17,51 +15,48 @@ export default function About() {
         />
       </Head>
 
-      <Navbar />
-
       <main className="flex flex-col items-center justify-center w-full flex-1 px-5 md:px-20 text-center">
-        <h1 className="text-primary text-6xl font-bold mt-6">
-          About Us
-        </h1>
+        <h1 className="pt-8 pb-2 text-primary text-6xl font-bold">About Us</h1>
 
-        <p className="mt-6 text-2xl">
+        <p className="text-2xl">
           We are a family-owned dental office in Temple City, CA 😊
         </p>
 
-        <h1 className="text-4xl mt-12 font-bold">
-          Our Values
-        </h1>
+        <h1 className="pt-6 pb-3 text-4xl font-bold">Our Values</h1>
 
-        <div
-          className="p-6 mt-6 border rounded-xl hover:text-primary focus:text-primary"
-        >
+        <div className="w-3/4 p-12 border rounded-xl hover:text-secondary focus:text-primary">
           <p className="text-left sm:text-md md:text-xl tracking-wide min-w-96">
-            <strong className="text-primary">Uni</strong>que because we are a family caring for families.<br/>
-            <strong className="text-primary">Uni</strong>versal because we provide high quality dental care for everyone, regardless of ability to pay.<br/>
-            <strong className="text-primary">Uni</strong>ted because we bring our team members and our clients together.<br/>
+            <strong className="text-primary">Uni</strong>que because we are a
+            family caring for families.
+            <br />
+            <strong className="text-primary">Uni</strong>versal because we
+            provide high quality dental care for everyone, regardless of ability
+            to pay.
+            <br />
+            <strong className="text-primary">Uni</strong>ted because we bring
+            our team members and our clients together.
+            <br />
           </p>
         </div>
 
-        {/* <div className="flex flex-wrap items-center justify-center max-w-4xl mt-6 sm:w-full">
-          <p className="text-left text-lg">
-            <strong>Uni</strong>que because we are a family caring for families.<br/>
-            <strong>Uni</strong>versal because we provide high quality dental care for everyone, regardless of ability to pay.<br/>
-            <strong>Uni</strong>ted because we bring our team members and our clients together.<br/>
-            <br/>
-            Uni brings U-N-I (you and I) together
-          </p>
-        </div> */}
+        <h1 className="pt-6 text-4xl font-bold">Our Team</h1>
 
-        <h1 className="text-4xl mt-12 font-bold">
-          Our Team
-        </h1>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl pb-6 sm:w-full">
+        <div className="flex flex-wrap items-center justify-around w-3/4 pb-6 sm:w-full">
           <a
             href=""
             className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Dr. David Huang, DDS</h3>
+            <p className="mt-4 text-xl">
+              {/* Find in-depth information about Next.js features and API. */}
+            </p>
+          </a>
+
+          <a
+            href=""
+            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+          >
+            <h3 className="text-2xl font-bold">Dr. Jason Huang, DDS</h3>
             <p className="mt-4 text-xl">
               {/* Find in-depth information about Next.js features and API. */}
             </p>
@@ -118,8 +113,8 @@ export default function About() {
           </a>
         </div>
       </main>
-
-      <Footer />
     </div>
-  )
-}
+  );
+};
+
+export default Home;
